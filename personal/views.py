@@ -27,7 +27,7 @@ def home_screen_view(request):
 	except PageNotAnInteger:
 		blog_posts = blog_posts_paginator.page(BLOG_POSTS_PER_PAGE)
 	except EmptyPage:
-		blog_posts = blog_posts_paginator.page(blog_posts_pagin  ator.num_pages)
+		blog_posts = blog_posts_paginator.page(blog_posts_paginator.num_pages)
 
 	context['blog_posts'] = blog_posts
 
